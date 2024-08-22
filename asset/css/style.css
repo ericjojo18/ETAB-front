@@ -69,7 +69,7 @@ img{
     font-size: 1.5rem;
     font-weight: medium;
     margin-bottom: 2rem;
-    color: orange;
+    color: rgb(8, 0, 255);
 }
 
 .login__content,
@@ -93,7 +93,7 @@ img{
 .login__icon,
 .login__eye{
     font-size: 1.5rem;
-    color: orange;
+    color: rgb(8, 0, 255);
 }
 
 .login__input{

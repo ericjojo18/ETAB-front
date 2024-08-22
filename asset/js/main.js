@@ -27,3 +27,21 @@ showHiddenPass('login-password', 'login-eye')
 
 /*==================== FIN ====================*/
 
+/*==================== MENUS ACTIVATION ====================*/
+
+const allSideMenu = document.querySelectorAll('#sidebars a');
+
+allSideMenu.forEach(item => {
+    const li = item; // L'élément 'a' dans ce cas
+
+    item.addEventListener('click', function () {
+        // Retirer la classe 'active' de tous les éléments
+        allSideMenu.forEach(i => {
+            i.classList.remove('active');
+        });
+
+        // Ajouter la classe 'active' à l'élément cliqué
+        li.classList.add('active');
+    });
+});
+

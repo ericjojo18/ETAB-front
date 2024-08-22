@@ -11,20 +11,13 @@
     </head>     
     <body>
         <div class="container">
-            <aside>
-                <div class="top">
-                    <div class="logo">
-                        <h2>Mon<span class="danger">Etab</span></h2>
-                    </div>
-                    <div class="close" id="close-btn">
-                        <span class="material-icons sharp">close</span>
-                    </div>
-                </div>
-                <div class="sidebar">
+            <aside id="sidebars">
+                <div class="sidebar" >
                     <a href="/dashboard.html">
                         <span class="material-icons sharp">dashboard</span>
                         <h3>Dashboard</h3>
                     </a>
+                    
                     <a href="/eleve/index.html" class="active">
                         <span class="material-icons sharp">groups</span>
                         <h3>élèves</h3>
@@ -41,14 +34,13 @@
                         <span class="material-icons sharp">analytics</span>
                         <h3>Rapports</h3>
                     </a>
-
                     <a href="/login.html">
                         <span class="material-icons sharp">logout</span>
-                       
                         <h3>Déconnexion</h3>
                     </a>
                 </div>
             </aside>
+            
             <main>
                 
 
@@ -58,7 +50,7 @@
                         <a href="/eleve/ajout_eleve.html" class="new-student-btn">+ Nouvel élève</a>   
                     </div>
                     
-                    <table id="MyTable">
+                    <table id="MyTable" class="tab">
                         <thead>
                             <tr>
                                 <th>Nom</th>
@@ -83,7 +75,9 @@
                                 <td>0712345678</td>
                                 <td>Bonoua</td>
                                 <td >
-                                    <button  class="btn edit">Modifier</>
+                                    <a href="/eleve/modif_eleve.html" ><button  class="btn edit" >Modifier</button>
+                                    </a>
+                                    
                                     <button id="deleteButton" class="btn delete">Supprimer</button> 
                                 </td>
 
@@ -98,7 +92,9 @@
                                 <td>0712345678</td>
                                 <td>Abidjan</td>
                                 <td >
-                                    <button class="btn edit">Modifier</button>
+                                    <a href="/eleve/modif_eleve.html" >
+                                        <button  class="btn edit" >Modifier</button>
+                                    </a>
                                     <button id="deleteButton" class="btn delete">Supprimer</button>
                                 </td>
 
